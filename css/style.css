@@ -1,0 +1,138 @@
+:root {
+   --font-family: "Roboto", sans-serif;
+   --second-family: "Raleway", sans-serif;
+ }
+
+body{
+   background-color: #fff;
+   color: #434445;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   letter-spacing: 0.02em;
+   line-height: 150%;
+}
+
+ul{
+   list-style: none;
+}
+a{
+   color: #2e2f42; 
+   text-decoration: none;
+}
+h2{
+   text-align: center;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 111%;
+}
+h3{
+   color: #2e2f42;
+   font-size: 20px;
+   font-weight: 500;
+}
+button{
+   font-family: inherit;
+   text-align: center;
+   font-size: 16;
+   font-weight: 500;
+}
+
+
+.container{
+}
+
+header {
+}
+footer{
+   background-color: #2e2f42;
+   color: #fff;
+}
+footer a{
+   color: #fff;
+}
+
+
+
+/* -------------------------Main Page-------------------------------- */
+
+/*--- Header ---*/
+.logo {
+   font-family: var(--second-family);
+   font-weight: 800;
+   font-size: 18px;
+}
+.logo__web{
+   color: #4d5ae5;
+}
+.menu a {
+}
+.menu__item {
+   font-weight: 500;
+}
+.adress {
+}
+
+/*--- hero ---*/
+.hero {
+   background-color: #2e2f42;
+}
+.title {
+   color: #fff;
+   font-size: 56px;
+   text-align: center;
+   font-weight: 500;
+}
+.hero__btn{
+   background-color: #4d5ae5;
+   color: #fff;
+}
+
+/*--- Advantages ---*/
+.advantages {
+}
+.section__title {
+}
+.advantages__list {
+}
+.advantages__list-items {
+}
+.advantages__list-item {
+}
+
+/*--- Gadjets ---*/
+.gadjets {
+}
+.gadjets__imgs {
+}
+
+/*--- Team ---*/
+.team {
+   background-color: #f4f4fd;
+}
+.team__list {
+}
+.team__list-item {
+   background-color: #fff;
+}
+
+
+
+/* -------------------------Portfolio---------------------------- */
+
+.portfolio {
+}
+.portfolio__filters {
+}
+.portfolio__btn {
+   color: #4d5ae5;
+   background-color: #e7e9fc;
+}
+.portfolio__btn:hover {
+   color: #fff;
+   background-color: #404bbf;
+}
+.portfolio__works {
+}
+.portfolio__works-item {
+}
