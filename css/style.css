@@ -1,35 +1,42 @@
 :root {
    --font-family: "Roboto", sans-serif;
    --second-family: "Raleway", sans-serif;
+
+   --primary-brand: #4d5ae5; /* iris */
+   --pressed-btn: #404bbf; /* ocean */ 
+   --dark: #2e2f42; /* navy-blue */
+   --text: #434455; /* slate*/
+   --light: #f4f4fd; /* cloud */
+   --primary: #fff; /* white */
  }
 
 body{
-   background-color: #fff;
-   color: #434445;
-   font-family: 'Roboto', sans-serif;
+   background-color: var(--primary);
+   color: var(--text);
+   font-family: var(--font-family);
    font-weight: 400;
    font-size: 16px;
    letter-spacing: 0.02em;
-   line-height: 150%;
+   line-height: 1.5;
 }
-
-ul{
+.list{
    list-style: none;
 }
-a{
-   color: #2e2f42; 
+.link{
+   color: var(--dark); 
    text-decoration: none;
 }
-h2{
+.section__title{
    text-align: center;
    font-size: 36px;
    font-weight: 700;
-   line-height: 111%;
+   line-height: 1.1;
 }
-h3{
-   color: #2e2f42;
+.item-title{
+   color: var(--dark);
    font-size: 20px;
    font-weight: 500;
+   line-height: 1.2;
 }
 button{
    font-family: inherit;
@@ -37,19 +44,31 @@ button{
    font-size: 16;
    font-weight: 500;
 }
+/*
+.visualli-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }*/
 
 
 .container{
 }
-
 header {
 }
 footer{
-   background-color: #2e2f42;
-   color: #fff;
+   background-color: var(--dark);
+   color: var(--primary);
 }
 footer a{
-   color: #fff;
+   color: var(--light);
 }
 
 
@@ -58,81 +77,70 @@ footer a{
 
 /*--- Header ---*/
 .logo {
+   text-decoration: none;
+   text-transform: uppercase;
    font-family: var(--second-family);
    font-weight: 800;
    font-size: 18px;
+   letter-spacing: 0.03em;
+   line-height: 1.2;
 }
 .logo__web{
-   color: #4d5ae5;
-}
-.menu a {
+   color: var(--primary-brand);
 }
 .menu__item {
    font-weight: 500;
 }
-.adress {
+.menu__item a:hover,
+.menu__item a:focus{
+   color: var(--primary-brand);
 }
+
 
 /*--- hero ---*/
 .hero {
-   background-color: #2e2f42;
+   background-color: var(--dark);
 }
 .title {
-   color: #fff;
+   color: var(--primary);
    font-size: 56px;
    text-align: center;
    font-weight: 500;
 }
 .hero__btn{
-   background-color: #4d5ae5;
-   color: #fff;
+   background-color: var(--primary-brand);
+   color: var(--primary);
 }
+
 
 /*--- Advantages ---*/
-.advantages {
-}
-.section__title {
-}
-.advantages__list {
-}
-.advantages__list-items {
-}
-.advantages__list-item {
-}
+
 
 /*--- Gadjets ---*/
-.gadjets {
-}
-.gadjets__imgs {
-}
+
 
 /*--- Team ---*/
 .team {
-   background-color: #f4f4fd;
-}
-.team__list {
+   background-color: var(--light);
 }
 .team__list-item {
-   background-color: #fff;
+   background-color: var(--primary);
 }
 
 
 
 /* -------------------------Portfolio---------------------------- */
 
-.portfolio {
-}
-.portfolio__filters {
-}
 .portfolio__btn {
-   color: #4d5ae5;
-   background-color: #e7e9fc;
+   color: var(--iris);
+   background-color: var(--light);
+   border-color: #0e21d9;
 }
-.portfolio__btn:hover {
-   color: #fff;
-   background-color: #404bbf;
-}
-.portfolio__works {
+.portfolio__btn:hover,
+.portfolio__btn:focus {
+   color: var(--primary);
+   background-color: var(--pressed-btn);
 }
 .portfolio__works-item {
+   border-color: #e7e9fc;
 }
